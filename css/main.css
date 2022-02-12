@@ -1,3 +1,101 @@
+.upside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  margin-right: 69px;
+}
+
+.logo__icon {
+  fill: #303030;
+}
+
+.logo__icon:hover {
+  fill: black;
+}
+
+.navigation {
+  padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 322px;
+}
+
+.navigation__item {
+  margin-right: 40px;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.navigation__tel {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+.navigation__btn {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 12px 20px;
+}
+
+.hero {
+  max-width: 1073px;
+  height: 680px;
+  background-image: url(/img/slider-mob3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/img/slider-mob3.jpg");
+  }
+}
+
 *,
 ::before,
 ::after {
@@ -29,8 +127,8 @@ img {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  max-width: 1170;
+  padding: 0 55px;
   margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

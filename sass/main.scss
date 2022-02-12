@@ -1,11 +1,11 @@
-@import "/sass/utils/variables";
-@import "/sass/components/hero-header";
-@import "/sass/components/about";
-@import "/sass/components/prices";
-@import "/sass/components/reasons";
-@import "/sass/components/masters";
-@import "/sass/components/portfolio";
-@import "/sass/components/footer";
+@import "./utils/variables";
+@import "./components/hero-header";
+@import "./components/about";
+@import "./components/prices";
+@import "./components/reasons";
+@import "./components/masters";
+@import "./components/portfolio";
+@import "./components/footer";
 
 *,
 ::before,
@@ -35,15 +35,30 @@ img {
 }
 
 .container {
-  padding: 0 15px;
+  max-width: 1170;
+  padding: 0 55px;
   margin: 0 auto;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1080px;
-  }
+
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  // }
+  // @media screen and (min-width: 1280px) {
+  //   width: 1080px;
+  // }
 }
+
+// .visually-hidden {
+//   position: absolute;
+//   white-space: nowrap;
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+//   border: 0;
+//   padding: 0;
+//   clip: rect(0 0 0 0);
+//   clip-path: inset(50%);
+//   margin: -1px;
+// }

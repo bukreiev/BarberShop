@@ -11,27 +11,291 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link href="./css/modern-normalize.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png"/> 
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="menu">
-          <div class="menu__mobile">
-            <a href="/index.html">
-              <svg class="menu__icon" width="69" height="55">
-                <use href="./img/icons.svg#icon-logo"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="menu__tab"></div>
-          <div class="menu__desktop"></div>
+    <header class="header">
+      <div class="container upside">
+        <!-- MENU -->
+        <a class="logo" href="/index.html">
+          <svg class="logo_icon" width="69" height="55">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#prices">Услуги и цены</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="masters">Мастера</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="footer">Контакты</a>
+            </li>
+          </ul>
+            <a class="navigation__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="navigation__btn" type="button">онлайн-запись</button>
+          </ul>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inside">
+            <span class="hero__line line"></span>
+            <p class="hero__note">A hair salon for men in Kyiv</p>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="hero__text">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+              и со вкусом.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <span class="about__line line"></span>
+          <p class="about__note">О нас</p>
+          <h3 class="about__title">Лучший Барбершоп твоего города</h3>
+          <p class="about__text">
+            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
+            к нам.
+          </p>
+          <p class="about__discription">
+            Мы команда, которая никогда не останавливается на достигнутом и
+            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+            никогда не сможешь быть прежним. Мы команда, которая всегда с
+            клиентами "на одной волне". Поэтому, мы всегда готовы
+            усовершенствовать каждого, кто к нам приходит!
+          </p>
+          <button type="button">Онлайн-запись</button>
+        </div>
+      </section>
+      <section class="prices" id="prices">
+        <div class="container">
+          <span class="prices__line line"></span>
+          <p class="prices__note">Проведи время в компании лучших мастеров</p>
+          <h2 class="prices__title">Услуги и цены</h2>
+          <ul class="prices__list">
+            <li class="prices__item"></li>
+            <li class="prices__item"></li>
+            <li class="prices__item"></li>
+            <li class="prices__item"></li>
+            <li class="prices__item"></li>
+            <li class="prices__item"></li>
+            <li class="prices__item"></li>
+            <li class="prices__item"></li>
+          </ul>
+          <button type="button">Онлайн-запись</button>
+        </div>
+      </section>
+      <section class="reasons">
+        <div class="container">
+          <span class="reasons__line line"></span>
+          <p class="reasons__note">Старая традиционная школа</p>
+          <h2 class="reasons__title">Почему приходят именно к нам?</h2>
+          <p class="reasons__text">
+            О нас говорят только хорошее. Но лучше 1 раз увидеть и
+            прочувствовать, чем 10 раз прочитать.
+          </p>
+          <ul class="reasons__list">
+            <li class="reasons__item">
+              <p>600</p>
+              <p>Довольных клиентов в день</p>
+              <span>+</span>
+            </li>
+            <li class="reasons__item">
+              <p>50</p>
+              <p>Наград за отличный сервис</p>
+              <span>+</span>
+            </li>
+            <li class="reasons__item">
+              <p>20</p>
+              <p>Лучших мастеров Киева</p>
+              <span>+</span>
+            </li>
+            <li class="reasons__item">
+              <p>100</p>
+              <p>Подарков постоянным клиентам</p>
+              <span>+</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="masters" id="masters">
+        <div class="container">
+          <span class="masters__line line"></span>
+          <p class="masters__note">для настоящих ценителей атмосферы</p>
+          <h2 class="masters__title">Наши мастера</h2>
+          <ul class="masters__list">
+            <li class="master">
+              <img src="" alt="" />
+              <p class="master__name">John Smith</p>
+              <p class="master__position">Extreme Barber</p>
+              <ul class="network">
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
 
-    <footer></footer>
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+              </ul>
+            </li>
+            <li class="master">
+              <img src="" alt="" />
+              <p class="master__name">Michele Doe</p>
+              <p class="master__position">Extreme Barber</p>
+              <ul class="network">
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+              </ul>
+            </li>
+            <li class="master">
+              <img src="" alt="" />
+              <p class="master__name">Alan Black</p>
+              <p class="master__position">Extreme Barber</p>
+              <ul class="network">
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+
+                <li class="network__item">
+                  <a class="network__link" href=""></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="container">
+          <span class="portfolio__line line"></span>
+          <p class="portfolio__note">для настоящих ценителей атмосферы</p>
+          <h2 class="visually-hidden">Портфолио</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <img src="" alt="" />
+            </li>
+            <li class="portfolio__item">
+              <img src="" alt="" />
+            </li>
+
+            <li class="portfolio__item">
+              <img src="" alt="" />
+            </li>
+
+            <li class="portfolio__item">
+              <img src="" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="online-booking">
+        <h3></h3>
+        <form class="booking">
+          <div class="booking__field">
+            <label class="booking__label" for="name">Имя*</label>
+            <div class="input">
+              <input
+                class="input__in"
+                type="text"
+                name="name"
+                id="name"
+                autofocus
+              />
+              <!-- <svg class="input__icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-form-name"></use>
+              </svg> -->
+            </div>
+          </div>
+          <div class="booking__field">
+            <label class="booking__label" for="tel">Телефон*</label>
+            <div class="input">
+              <input class="input__in" type="tel" name="tel" id="tel" />
+              <!-- <svg class="input__icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-form-phone"></use>
+              </svg> -->
+            </div>
+          </div>
+          <div class="booking__field">
+            <label class="booking__label" for="comment">Сообщение</label>
+            <textarea
+              class="booking__textarea"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <button class="booking__submit" type="submit">Отправить</button>
+        </form>
+      </div>
+      <address>
+        <div class="address">
+          <h2 class="address__title" id="contacts">Контакты</h2>
+          <ul class="address__list">
+            <li class="address__item">
+              <a class="address__link" href=""></a>
+            </li>
+            <li class="address__item">
+              <a class="address__link" href=""></a>
+            </li>
+            <li class="address__item">
+              <a class="address__link" href=""></a>
+            </li>
+          </ul>
+        </div>
+        <div class="working-time">
+          <span class="working-time__line line"></span>
+          <p class="working-time__title">время работы</p>
+          <p class="working-time__text">Ежедневно с 9:00 до 22:00</p>
+        </div>
+      </address>
+      <div class="footer-notes"></div>
+    </footer>
+    <script src="/js/menu.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/scrollup.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
 </html>
